@@ -1,0 +1,128 @@
+import type { Module } from "../types";
+import { qq } from "../types";
+
+export const shift: Module = {
+  id: "shift",
+  name: "Shift leadership & SPA",
+  summary: "Shift Into Overdrive, service cycle, positioning, and the SPA journey.",
+  flows: [
+    {
+      title: "McCafé service cycle",
+      steps: [
+        { t: "Welcome", d: "Greet, appearance" },
+        { t: "Connect", d: "Listen, talk, take payment" },
+        { t: "Deliver", d: "Collect and present" },
+        { t: "Farewell", d: "Goodbye and magic moments" },
+      ],
+    },
+    {
+      title: "SPA order journey",
+      steps: [
+        { t: "Order", d: "Greet, take, pay" },
+        { t: "Production", d: "KVS: MFY, fries, drinks" },
+        { t: "Assembly", d: "OAT and the pick ticket" },
+        { t: "Present", d: "Hand over and say farewell" },
+      ],
+    },
+    {
+      title: "Shift Into Overdrive day",
+      steps: [
+        { t: "Prep", d: "1 hour, on another day" },
+        { t: "Pre-shift", d: "1 to 1.5 hours" },
+        { t: "Lead", d: "The rest of the shift" },
+        { t: "Post-shift", d: "1 hour" },
+      ],
+    },
+  ],
+  notes: [
+    { lv: 0, text: "Shift leadership delivers QSC by coordinating people, equipment, and product, one shift at a time, and grows sales profitably. Guests want service that is fast, accurate, and friendly. Walk, do not run. Ask for help. Two deep is too deep. Counter experience time is 5 minutes." },
+    { lv: 0, text: "The four McCafé moments are Welcome, Connect, Deliver, and Farewell. Moments of truth are quality, service, cleanliness, and value. Customer expectations in the leadership notes add a fourth word: customised." },
+    { lv: 1, text: "Pre-shift: read messages, check equipment and have a plan B, set targets, set positions, and make a to-do list. During the shift, travel for safety, QSC, guest experience, and appearance. Reposition people. Thank them. After the shift, compare guest counts, speed, labour, and waste with the targets, and hand barriers to the next leader." },
+    { lv: 1, text: "SIO pre-coaching is about 1 hour on a day that is not the training day: schedule, sales pattern, positioning, stock, and the projection. Pre-shift on the day is 1 to 1.5 hours. Post-shift is about 1 hour. Foundations named on the guide: pre-shift planning, positioning, targets, travel path, leading the shift, observation, taste of quality, reward and recognition, a clean safe environment, and the post-shift routine." },
+    { lv: 2, text: "The initiator prepares at most two sandwiches or wraps and stays with them until the assembler pulls them. A separate delivery station is needed at 10 orders an hour. Never gate delivery orders. Bags go to the courier sealed, all at the same time. Made-for-you food arrives at the OAT. Beverages arrive at the BLZ." },
+    { lv: 2, text: "Crew schedules are posted at least 5 days ahead. Managers’ schedules are posted at least 14 days before the month starts. A projection hour counts when actual guest count is within ±10 of the projection. Staffing is reviewed monthly. Scheduling and positioning are weekly. Gold-standard quality uses a Big Mac and French fries, with the Best Burger shift huddle cards." },
+    { lv: 2, text: "Shift-leader timing KPIs include KVS time, receipt-to-present, drive-thru order-end to present-end, pull-forward, and delivery restaurant time. Crew trainers use the 3-step training method. Leader learning sits on Fred and Campus. Employee surveys run at least once a year, then an action plan. A crew outing is every 6 months, and each new hire gets a 90-day follow-up." },
+  ],
+  questions: [
+    qq("SIO coaching day: estimated pre-shift time?", "1 to 1.5 hours", "15 minutes", "3 hours", "The whole shift", "Pre-coaching prep is about 1 hour on another day. Post-shift is about 1 hour.", 0),
+    qq("The gold-standard quality check uses which products?", "Big Mac and French fries", "McChicken and nuggets", "Filet-O-Fish and a shake", "Egg McMuffin and a hash brown", "Use the Best Burger shift huddle cards.", 0),
+    qq("Shift leadership delivers QSC by coordinating…", "People, equipment and product", "Cash, stock and uniforms", "Menu, price and place", "Sales, labour and waste", "One shift at a time, growing sales profitably.", 0),
+    qq("An initiator prepares at most how many sandwiches or wraps at a time?", "2", "1", "4", "6", "The initiator stays with the product until the assembler pulls it.", 1),
+    qq("A separate delivery station is needed when delivery demand reaches…", "10 orders per hour", "2", "25", "50", "It reduces congestion at the order assembly table.", 1),
+    qq("Crew schedules should be posted at least…", "5 days prior", "24 hours", "14 days", "1 month", "Managers’ schedules go up at least 14 days before the month starts.", 1),
+    qq("Projection effectiveness counts hours where actual guest count minus projected is within…", "±10", "±1", "±50", "±100", "Divide the hours inside ±10 by the hours that have data.", 2),
+    qq("The four moments in the McCafé service cycle?", "Welcome, Connect, Deliver, Farewell", "Greet, Take, Cook, Serve", "Order, Pay, Eat, Leave", "Welcome, Upsell, Pay, Bye", "Moments of truth: quality, service, cleanliness, and value.", 2),
+    qq("After the shift, a shift leader should…", "Compare results with targets and thank the crew", "Leave immediately", "Only count cash", "Wait for the next day’s report", "Also hand opportunities and barriers to the next shift leader.", 2),
+    qq("Guests expect service to be…", "Fast, accurate, customised and friendly", "Cheap, loud and late", "Quiet, formal and slow", "Left to chance", "Walk, do not run, and ask for help when you need it.", 0),
+    qq("The 3-step training method is used by…", "Crew trainers", "Suppliers", "Auditors", "Guests", "Crew-trainer development includes certification on that method.", 1),
+    qq("Where is leader learning found?", "Fred and Campus", "A social feed", "A music app", "Email only", "Shift, department, and restaurant leader learning is there.", 1),
+    qq("In SPA, where do made-for-you foods and drinks arrive?", "Food at the OAT; beverages at the BLZ", "Food at the BLZ; drinks at the OAT", "Both at the KVS", "Both at the drive-thru", "OAT means order assembly table.", 2),
+    qq("Delivery bags are handed to the courier…", "Sealed, all at the same time", "One at a time", "Open", "After a 10-minute wait", "Handing them over together keeps the order accurate.", 2),
+    qq("How often should employee surveys be done?", "At least once a year", "Never", "Every 10 years", "Daily", "Then build an action plan from the results.", 1),
+    qq("Crew outing or event frequency in People Practices?", "Every 6 months", "Weekly", "Every 5 years", "Never", "Also complete a 90-day follow-up for each new hire.", 2),
+    qq("Staffing, scheduling and positioning cycle?", "Staffing monthly; scheduling weekly; positioning weekly", "All daily", "All yearly", "Staffing weekly and positioning yearly", "The aim is the right people, in the right place, at the right time.", 1),
+    qq("SIO pre-coaching review includes…", "Schedule, sales pattern, positioning, stock and the projection", "Only the uniform", "Only the cash", "Only menu prices", "It is done on a different day from the training day.", 1),
+    qq("Which are shift-leader KPIs?", "KVS time, receipt-to-present, and drive-thru order-end to present-end", "Rent, tax and price", "Staff age", "Parking spaces", "Also pull-forward effectiveness and delivery restaurant time.", 2),
+    qq("Taste-of-quality stock check on the SIO guide looks for…", "FIFO and product shortage", "Only the uniform board", "Only the music", "Only the toy count", "It is activity 4: check stock levels so the shift can serve to standard.", 1),
+  ],
+};
+
+export const safety: Module = {
+  id: "safety",
+  name: "Food safety & health",
+  summary: "Temperatures, product flow, core minimums, and the safety and security split.",
+  flows: [
+    {
+      title: "Temperatures, cold to hot",
+      steps: [
+        { t: "Frozen", d: "−18°C or colder" },
+        { t: "Fridge", d: "4.4°C or below" },
+        { t: "Hot hold", d: "60°C or above" },
+        { t: "Beef, pork, eggs", d: "69°C" },
+        { t: "Fish", d: "71°C" },
+        { t: "Chicken, McPlant", d: "74°C" },
+      ],
+    },
+    {
+      title: "Food product flow",
+      steps: [
+        { t: "Receive", d: "Approved sources" },
+        { t: "Store", d: "FIFO, off the floor" },
+        { t: "Prepare", d: "Shelf life and allergens" },
+        { t: "Cook", d: "Check the core temperature" },
+        { t: "Hold", d: "60°C or above, inside the time" },
+      ],
+    },
+  ],
+  notes: [
+    { lv: 0, text: "The food-safety goal is to always serve safe food. Crew do the tasks, the shift manager monitors them, and the general manager verifies the system." },
+    { lv: 0, text: "Core minimums: a sound building and equipment, safe water with 0.2 micron filters that are labelled and changed on time, pest control, hourly handwashing, cleaning, and the right temperatures and times." },
+    { lv: 1, text: "Daily checklist: calibrated pyrometer, gloves and sanitiser ready, healthy staff, fridge and freezer temperatures, products covered, and holding times marked. Blue gloves are for raw products. White gloves are for other tasks." },
+    { lv: 1, text: "Breakfast sausage and shell eggs are 69°C / 155°F. Eggs are cooked until the yolk is gelled, not runny. Chicken and McPlant are 74°C / 165°F. Beef and pork are 69°C / 155°F. Fish is 71°C / 160°F. Frozen storage is −18°C / 0°F or colder. Refrigerated storage is at or below 4.4°C / 40°F. Hot holding is 60°C / 140°F or above." },
+    { lv: 2, text: "Keep 60 days of daily food-safety checklists, completed correctly, plus the last two monthly verifications. Monthly checks cover health and hygiene, procedures, training, and support systems such as pests, water filters, and maintenance. Signals include a working digital food-safety system, a complete pyrometer kit, products in code, and no pest infestation." },
+    { lv: 2, text: "Safety is accidents and hazards: PPE, fire equipment, floors, and clear exits. Security is crime and cash: CCTV, alarms, locks, cash variances, and staggered open and close. Variances over the guideline go to the restaurant leader and the supervisor. Emergencies such as robbery or a bomb threat: call local law enforcement, then the supervisor or owner and the field security leader." },
+    { lv: 2, text: "Fixed fire suppression is serviced at least every 6 months. Grills, CO detectors, and the beverage-tower recovery program are certified yearly. Planned maintenance runs weekly, bi-weekly, monthly, quarterly, semi-annual, and annual. Change locks and codes when a manager leaves. Injuries are treated at once by trained first-aid people." },
+  ],
+  questions: [
+    qq("Chicken must be cooked to at least…", "74°C / 165°F", "60°C", "69°C", "71°C", "McPlant is also 74°C.", 0),
+    qq("Beef or pork internal temperature?", "69°C / 155°F", "74°C", "60°C", "80°C", "Fish is 71°C / 160°F.", 0),
+    qq("Frozen product storage temperature?", "−18°C / 0°F or colder", "−5°C", "0°C", "4.4°C", "Refrigerated storage is at or below 4.4°C / 40°F.", 0),
+    qq("Hot holding temperature in the UHC?", "60°C / 140°F or above", "40°C", "50°C", "30°C", "And it must stay inside the holding time.", 1),
+    qq("Fixed fire suppression over fryers and grills is serviced…", "At least every 6 months", "Yearly", "Every 3 years", "Never", "Grills and CO detectors are certified every year.", 1),
+    qq("Potable water filters are especially…", "0.2 micron", "5 micron", "10 micron", "1 mm", "They must be labelled and changed on time.", 1),
+    qq("Food-safety daily checklists must be kept for…", "60 days, completed correctly", "7 days", "14 days", "1 year", "Also keep the last two monthly verifications.", 2),
+    qq("Blue gloves are used for…", "Raw products", "Cash handling", "Cleaning", "Cooked buns", "White disposable gloves are used as required for other tasks.", 2),
+    qq("Who monitors tasks in the food-safety core minimums?", "The shift manager", "Only the crew", "Only suppliers", "Only auditors", "Crew execute, the shift manager monitors, and the general manager verifies.", 2),
+    qq("Breakfast sausage and shell eggs minimum temperature?", "69°C / 155°F", "60°C", "74°C", "50°C", "Eggs are cooked until the yolk is gelled, not runny.", 1),
+    qq("Injuries in the restaurant are treated by…", "Trained first-aid people, immediately", "Anyone, later", "Guests", "Nobody", "Claims are reported inside the required period.", 0),
+    qq("Which routine is monthly under physical safety?", "A workplace safety inspection, with corrective actions", "A menu change", "A price check", "A uniform photo", "Daily checks include floors, play areas, crosswalks, and clear emergency exits.", 1),
+    qq("Cash variances over the guidelines are reported to…", "The restaurant leader and the supervisor", "Nobody", "Only a friend", "Only a guest", "This includes shortages, promo variance, and high T-reds or B-reds.", 2),
+    qq("For a robbery or bomb threat, call…", "Local law enforcement", "A supplier", "Marketing", "A social network", "Also report it to the supervisor or owner and the field security leader.", 0),
+    qq("Annual certifications include…", "Grills, CO detectors and the beverage-tower recovery program", "Uniforms", "Paint", "Menu boards", "Fire suppression systems and extinguishers are bi-annual.", 2),
+    qq("Planned maintenance task frequencies?", "Weekly, bi-weekly, monthly, quarterly, semi-annual and annual", "Hourly only", "Never", "Yearly only", "The restaurant leader makes sure the tasks are completed.", 1),
+    qq("What does ROP stand for?", "Restaurant Order Proposal", "Required Order Plan", "Real Opening Procedure", "Regional Ops Policy", "ROP is used for items such as proteins. Promo products are pushed, with no restaurant order.", 1),
+    qq("Inventory warning signals include…", "Stock-outs, large count differences, unscheduled deliveries and high waste", "Clean floors", "Happy crew", "Short queues", "Count accuracy is what makes the next order good.", 2),
+    qq("Security routines to follow daily?", "Back door, cash policies, and staggered opening and closing", "Ignore them", "Treat them as optional", "Only once a month", "Also change locks and codes when a manager leaves.", 1),
+    qq("A food-safety signal from the system map is…", "A working digital food-safety system and a complete pyrometer kit", "The music volume", "The parking count", "The toy inventory", "Other signals include hourly handwashing, products in code, and no pest infestation.", 2),
+  ],
+};

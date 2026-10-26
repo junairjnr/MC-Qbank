@@ -1,0 +1,68 @@
+import type { Module } from "../types";
+import { qq } from "../types";
+
+export const drinks: Module = {
+  id: "drinks",
+  name: "Beverage recipes",
+  summary: "Frothing, hot drinks, frappes, tea, and the March 2024 recipe amounts.",
+  flows: [
+    {
+      title: "Milk frothing",
+      steps: [
+        { t: "Fill", d: "Jug one-third full of cold milk" },
+        { t: "Purge", d: "Wand for a few seconds" },
+        { t: "Insert", d: "Nozzle near the base" },
+        { t: "Aerate", d: "5–10 mm under the surface" },
+        { t: "Stop", d: "Thermometer at 60°C" },
+        { t: "Finish", d: "Tap the jug, purge, green cloth" },
+      ],
+    },
+    {
+      title: "Vanilla frappe, March 2024",
+      steps: [
+        { t: "Milk", d: "100 ml cold skimmed" },
+        { t: "Base", d: "60 g frappe base" },
+        { t: "Sauce", d: "60 ml vanilla" },
+        { t: "Ice", d: "One cup" },
+        { t: "Blend", d: "25 s, or 40 s for two" },
+        { t: "Top", d: "2.5 turns of cream" },
+      ],
+    },
+  ],
+  notes: [
+    { lv: 0, text: "Good frothed milk is shiny, creamy white, and dense, with no large bubbles. It is used for cappuccino, latte, mocha, hot chocolate, babychino, and flat white. Heat only the milk you need. Never leave a jug on the wand alone: the wand can pull milk into the boiler." },
+    { lv: 0, text: "Milk fridge is 1–4°C. Stop frothing at 60°C. The milk keeps rising and should finish between 60°C and 70°C. Leftover milk may be reheated once and is thrown away after 2 hours. Wash jugs and spoons every 2 hours." },
+    { lv: 1, text: "12 oz cappuccino or latte uses about 285 ml milk. 16 oz uses about 370 ml. Mochachino milk is about 255 ml and 335 ml. Cappuccino: one spoon of foam on the espresso, milk to two-thirds, a dome 1 cm above the rim on ceramic only, and 2 g cocoa through the template. Latte: milk to 1 cm below the rim, then foam." },
+    { lv: 1, text: "Jug sizes: 1 drink 0.5 L, 2 drinks 1 L, 3 drinks 1.5 L, 4 drinks 2 L. Macchiato is one dash of milk on the espresso. Babychino is an espresso paper cup with chocolate powder: one-third cold milk, one-third heated, one-third frothed, then a foam dome. Americano water goes slowly down the tilted cup wall so the crema stays on top." },
+    { lv: 2, text: "Chocolate powder: mochachino 30 g for 12 oz and 40 g for 16 oz, with 75 ml and 110 ml espresso base. Hot chocolate is 45 g and 60 g. Use a 600 ml jug for 12 oz and a 1 L jug for 16 oz, one drink per jug, and that drink’s own green towel. Hot chocolate milk heated to 70°C is discarded, not reused." },
+    { lv: 2, text: "March 2024 vanilla frappe: 100 ml skimmed milk, 60 g base, 60 ml vanilla, one cup of ice, blend 25 seconds (40 seconds for two), 2.5 turns of cream. The 2019 SOC used 200 ml skimmed milk with the same base and sauce. Follow the current SOP in the restaurant. Chocolate frappe in the older notes: 30 g base, 30 g powder, 30 ml syrup. Mocha frappe: 125 ml milk and 42±2 ml espresso. Oreo: 15 g in the blender." },
+    { lv: 2, text: "Tea base is 10 Dilmah bags, steeped 2 minutes, held 24 hours. Remove the bags at once or the tea turns bitter. Iced tea is 50 ml syrup. Lemon iced tea is 45 ml lemon and 10 ml sugar. Iced latte is 30 ml syrup, ice to the logo, double espresso, milk to the fill line, 2.5 swirls of cream. Karak: 30 g powder, 100 ml hot water, stir 15–20 seconds. March 2024 uses about 100 ml full cream milk, 1 cm below the rim. Older notes said 110 ml frothed milk." },
+    { lv: 2, text: "Smoothie, March 2024: 100 ml cold water, 30 g cooler powder, 80 ml puree. Sliced banana holds 3 hours. Pineapple stick thaws 8 hours and holds 48 hours. Coconut puree: 24 hours in the cooler or 6 hours at room temperature, then 5 days once thawed. Watery frappe usually means the ice sat and melted. Ice chunks: blend longer on pulse. Weak flavour: check the scoop, and whether too much ice or milk diluted the drink." },
+  ],
+  questions: [
+    qq("Frothing milk: stop heating at…", "60°C", "40°C", "80°C", "90°C", "Stop at 60°C. The temperature keeps rising as steam escapes, and the finished milk should be 60–70°C.", 0),
+    qq("Milk storage temperature and max holding time for frothed milk?", "1–4°C; 2 hours", "4–8°C; 6 hours", "−2°C; 1 hour", "1–4°C; 24 hours", "Milk heated up to 70°C cannot be reheated more than once.", 0),
+    qq("Milk in a 12 oz cappuccino or latte is about…", "285 ml", "200 ml", "370 ml", "255 ml", "16 oz uses about 370 ml. Cappuccino cocoa is 2 g.", 0),
+    qq("Mochachino 12 oz: chocolate powder and espresso base?", "30 g powder; 75 ml base", "40 g; 110 ml base", "45 g; 75 ml base", "20 g; 50 ml base", "16 oz uses 40 g powder and 110 ml base.", 1),
+    qq("Hot chocolate 12 oz uses how much chocolate powder?", "45 g", "30 g", "60 g", "15 g", "16 oz uses 60 g. Use a 600 ml jug for 12 oz and a 1 L jug for 16 oz, one drink per jug.", 1),
+    qq("Vanilla frappe blend time for one drink?", "25 seconds", "10 seconds", "40 seconds", "60 seconds", "For two drinks, double the ingredients and blend 40 seconds.", 1),
+    qq("2019 SOC vanilla frappe ingredients for one drink?", "200 ml skimmed milk, 60 g base, 60 ml vanilla", "125 ml milk, 30 g base, 30 ml sauce", "300 ml full cream, 30 g base", "200 ml milk, 30 g base, 15 ml vanilla", "Plus a full 16 oz cup of ice and 2.5 swirls of whipped cream. March 2024 drops the milk to 100 ml.", 2),
+    qq("Tea base: how many Dilmah bags and what steep time?", "10 bags, 2 minutes", "5 bags, 5 minutes", "10 bags, 10 minutes", "2 bags, 2 minutes", "Remove the bags at once to avoid bitterness. Holding time is 24 hours.", 2),
+    qq("Iced latte syrup amount?", "30 ml", "10 ml", "50 ml", "60 ml", "Ice to the McCafé logo, syrup, double espresso, milk to the fill line, then 2.5 swirls of cream.", 2),
+    qq("Karak chai: powder and hot water?", "30 g powder + 100 ml hot water", "60 g + 200 ml", "15 g + 50 ml", "30 g + 300 ml", "Stir 15–20 seconds. March 2024 adds about 100 ml full cream milk. Older notes said 110 ml frothed milk.", 2),
+    qq("Jug size for two cappuccinos?", "1 litre", "0.5 litre", "1.5 litres", "2 litres", "One drink is 0.5 L, two are 1 L, three are 1.5 L, and four are 2 L.", 1),
+    qq("How is a macchiato finished?", "1 dash of milk on top of the espresso", "A full cup of foam", "Chocolate powder", "A quarter cup of cold milk", "Dine-in uses a saucer. Take-away uses an espresso paper cup with a lid.", 0),
+    qq("Babychino is served in…", "An espresso paper cup, with chocolate powder on top", "A ceramic cup", "A latte glass", "A 16 oz cold cup", "Layers are one-third cold milk, one-third heated milk, one-third frothed milk, then a foam dome.", 0),
+    qq("How is Americano water added?", "Slowly on the cup wall, with the cup tilted", "Fast from the top", "Before the espresso", "Boiling, from a kettle", "This keeps the crema on top. 12 oz is a double espresso. 16 oz is a large base.", 1),
+    qq("Hot chocolate: milk heated to 70°C, and the remainder is…", "Discarded", "Reused", "Reheated later", "Kept for the next drink", "The main recipe froths milk and chocolate together up to 60°C.", 2),
+    qq("Dine-in hot tea: how is the teabag handled?", "Bag in the teapot, string twisted around the knob", "Bag in the cup, string cut", "Bag in a paper cup", "Loose leaf in the pot", "Take-out: the bag sits on a cup filled with hot water.", 0),
+    qq("A watery blended frappe is often caused by…", "Ice that melted after sitting for hours", "Too little ice", "Cold milk", "The cup colour", "Check ice quality before blending.", 1),
+    qq("The frappe has ice chunks. What should you do?", "Blend longer using the pulse button", "Serve it with a spoon", "Add more ice", "Add warm water", "Also separate the ice so there are no clumps.", 1),
+    qq("A frappe lacks flavour. Check…", "Scoop size, too much ice or milk, and an icy blend", "The cup lid", "The straw size", "The cream colour", "Too much ice or milk dilutes the flavour.", 2),
+    qq("Why never leave milk heating alone on the steam wand?", "The wand can act like a vacuum and pull milk into the boiler", "The milk turns blue", "The jug melts", "The wand rusts", "Also never leave the wand soaking in water.", 2),
+    qq("Short Rancilio Classe 9: espresso for a take-out cappuccino goes into…", "A measuring cup or small metal jug", "The take-away cup directly", "A ceramic bowl", "A glass of ice", "Then transfer it carefully so the crema stays intact.", 2),
+    qq("March 2024 vanilla frappe skimmed milk amount?", "100 ml, with 60 ml vanilla and 60 g base", "200 ml", "500 ml", "20 ml", "The 2019 sheet used 200 ml. Use the SOP that is current in your restaurant.", 2),
+    qq("March 2024 smoothie base?", "100 ml cold water, 30 g cooler powder, 80 ml puree", "300 ml milk", "30 ml water and no puree", "200 ml skimmed milk only", "Strawberry, mango, or coconut puree. Blend 25 seconds, or 40 seconds for two drinks.", 2),
+    qq("Sliced banana holding time in the cooler?", "3 hours", "24 hours", "8 hours", "30 minutes", "Pineapple stick thaws for 8 hours and then holds 48 hours. Coconut puree holds 5 days once thawed.", 2),
+  ],
+};
