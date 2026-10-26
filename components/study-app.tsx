@@ -22,7 +22,8 @@ export function StudyApp({ slug }: { slug: string[] }) {
   }, []);
 
   function toggleTheme() {
-    const next = theme === "dark" ? "light" : "dark";
+    const current = document.documentElement.dataset.theme === "light" ? "light" : "dark";
+    const next = current === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
     localStorage.setItem("mcbank-theme", next);
     setTheme(next);
@@ -71,7 +72,6 @@ export function StudyApp({ slug }: { slug: string[] }) {
 
   return (
     <>
-      <a className="skip" href="#main">Skip to content</a>
       <div className="wrap">
         <header className={parent ? "top has-back" : "top"}>
           {parent ? <Link className="iconbtn backbtn" href={parent}>Back</Link> : null}
